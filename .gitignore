@@ -1,0 +1,9 @@
+env/
+models/
+tmp_models/
+__pycache__/
+Demo Photos/
+new_env/
+test.py
+mongo.py
+test photos/

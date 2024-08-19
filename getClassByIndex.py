@@ -1,0 +1,258 @@
+# def getClassByIndex(classIndex, name):
+#     plant_classes = {
+#         "Apple": [
+#             "Apple__black_rot",
+#             "Apple__healthy",
+#             "Apple__rust",
+#             "Apple__scab",
+#         ],
+#         "Cherry": [
+#             "Cherry__healthy",
+#             "Cherry__powdery_mildew",
+#         ],
+#         "Coffee": [
+#             "Coffee__cercospora_leaf_spot",
+#             "Coffee__healthy",
+#             "Coffee__red_spider_mite",
+#             "Coffee__rust",
+#         ],
+#         "Corn": [
+#             "Corn__common_rust",
+#             "Corn__gray_leaf_spot",
+#             "Corn__healthy",
+#             "Corn__northern_leaf_blight",
+#         ],
+#         "Cucumber": [
+#             "Cucumber__diseased",
+#             "Cucumber__healthy",
+#         ],
+#         "Gauva": [
+#             "Gauva__diseased",
+#             "Gauva__healthy",
+#         ],
+#         "Grape": [
+#             "Grape__black_measles",
+#             "Grape__black_rot",
+#             "Grape__healthy",
+#             "Grape__leaf_blight_(isariopsis_leaf_spot)",
+#         ],
+#         "Potato": [
+#             "Potato__early_blight",
+#             "Potato__healthy",
+#             "Potato__late_blight",
+#         ],
+#         "Tea": [
+#             "Tea__algal_leaf",
+#             "Tea__anthracnose",
+#             "Tea__bird_eye_spot",
+#             "Tea__brown_blight",
+#             "Tea__healthy",
+#             "Tea__red_leaf_spot",
+#         ],
+#         "Tomato": [
+#             "Tomato__bacterial_spot",
+#             "Tomato__early_blight",
+#             "Tomato__healthy",
+#             "Tomato__late_blight",
+#             "Tomato__leaf_mold",
+#             "Tomato__mosaic_virus",
+#             "Tomato__septoria_leaf_spot",
+#             "Tomato__spider_mites_(two_spotted_spider_mite)",
+#             "Tomato__target_spot",
+#             "Tomato__yellow_leaf_curl_virus",
+#         ],
+#     }
+#     return plant_classes[name][classIndex]
+def checkPlant(name):
+    dic = [
+        "Apple",
+        "Cassava",
+        "Cherry",
+        "Chili",
+        "Coffee",
+        "Corn",
+        "Cucumber",
+        "Gauva",
+        "Grape",
+        "Jamun",
+        "Lemon",
+        "Mango",
+        "Peach",
+        "Pepper_bell",
+        "Pomegranate",
+        "Potato",
+        "Rice",
+        "Soybean",
+        "Strawberry",
+        "Sugarcane",
+        "Tea",
+        "Tomato",
+        "Wheat",
+    ]
+    dicc = [
+        "banana",
+        "soyabean",
+        "mango",
+        "corn",
+        "pomgernate",
+        "strawberry",
+        "potato",
+        "wheat",
+        "rice",
+        "lemon",
+        "gauava",
+        "chilli",
+        "cherry",
+        "cassava",
+        "apple",
+        "tea",
+        "sugarcane",
+        "peach",
+        "coffee",
+        "tomato",
+        "jamun",
+        "cucumber",
+        "grape",
+    ]
+    return name.capitalize() in dic or name in dicc
+
+
+def getClassByIndex(classIndex, name):
+    plant_classes = {
+        "Apple": [
+            "Apple__black_rot",
+            "Apple__healthy",
+            "Apple__rust",
+            "Apple__scab",
+        ],
+        "Cassava": [
+            "Cassava__bacterial_blight",
+            "Cassava__brown_streak_disease",
+            "Cassava__green_mottle",
+            "Cassava__healthy",
+            "Cassava__mosaic_disease",
+        ],
+        "Cherry": [
+            "Cherry__healthy",
+            "Cherry__powdery_mildew",
+        ],
+        "Chili": [
+            "Chili__healthy",
+            "Chili__leaf_curl",
+            "Chili__leaf_spot",
+            "Chili__whitefly",
+            "Chili__yellowish",
+        ],
+        "Coffee": [
+            "Coffee__cercospora_leaf_spot",
+            "Coffee__healthy",
+            "Coffee__red_spider_mite",
+            "Coffee__rust",
+        ],
+        "Corn": [
+            "Corn__common_rust",
+            "Corn__gray_leaf_spot",
+            "Corn__healthy",
+            "Corn__northern_leaf_blight",
+        ],
+        "Cucumber": [
+            "Cucumber__diseased",
+            "Cucumber__healthy",
+        ],
+        "Gauva": [
+            "Gauva__diseased",
+            "Gauva__healthy",
+        ],
+        "Grape": [
+            "Grape__black_measles",
+            "Grape__black_rot",
+            "Grape__healthy",
+            "Grape__leaf_blight_(isariopsis_leaf_spot)",
+        ],
+        "Jamun": [
+            "Jamun__diseased",
+            "Jamun__healthy",
+        ],
+        "Lemon": [
+            "Lemon__diseased",
+            "Lemon__healthy",
+        ],
+        "Mango": [
+            "Mango__diseased",
+            "Mango__healthy",
+        ],
+        "Peach": [
+            "Peach__bacterial_spot",
+            "Peach__healthy",
+        ],
+        "Pepper_bell": [
+            "Pepper_bell__bacterial_spot",
+            "Pepper_bell__healthy",
+        ],
+        "Pomegranate": [
+            "Pomegranate__diseased",
+            "Pomegranate__healthy",
+        ],
+        "Potato": [
+            "Potato__early_blight",
+            "Potato__healthy",
+            "Potato__late_blight",
+        ],
+        "Rice": [
+            "Rice__brown_spot",
+            "Rice__healthy",
+            "Rice__hispa",
+            "Rice__leaf_blast",
+            "Rice__neck_blast",
+        ],
+        "Soybean": [
+            "Soybean__bacterial_blight",
+            "Soybean__caterpillar",
+            "Soybean__diabrotica_speciosa",
+            "Soybean__downy_mildew",
+            "Soybean__healthy",
+            "Soybean__mosaic_virus",
+            "Soybean__powdery_mildew",
+            "Soybean__rust",
+            "Soybean__southern_blight",
+        ],
+        "Strawberry": [
+            "Strawberry___leaf_scorch",
+            "Strawberry__healthy",
+        ],
+        "Sugarcane": [
+            "Sugarcane__bacterial_blight",
+            "Sugarcane__healthy",
+            "Sugarcane__red_rot",
+            "Sugarcane__red_stripe",
+            "Sugarcane__rust",
+        ],
+        "Tea": [
+            "Tea__algal_leaf",
+            "Tea__anthracnose",
+            "Tea__bird_eye_spot",
+            "Tea__brown_blight",
+            "Tea__healthy",
+            "Tea__red_leaf_spot",
+        ],
+        "Tomato": [
+            "Tomato__bacterial_spot",
+            "Tomato__early_blight",
+            "Tomato__healthy",
+            "Tomato__late_blight",
+            "Tomato__leaf_mold",
+            "Tomato__mosaic_virus",
+            "Tomato__septoria_leaf_spot",
+            "Tomato__spider_mites_(two_spotted_spider_mite)",
+            "Tomato__target_spot",
+            "Tomato__yellow_leaf_curl_virus",
+        ],
+        "Wheat": [
+            "Wheat__brown_rust",
+            "Wheat__healthy",
+            "Wheat__septoria",
+            "Wheat__yellow_rust",
+        ],
+    }
+
+    return plant_classes[name][classIndex]
